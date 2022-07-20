@@ -14,7 +14,7 @@ from pathlib import Path
 import os
 import json
 
-with open ('../config.json') as config_file:
+with open ('config.json') as config_file:
     config = json.load(config_file)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
