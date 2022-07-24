@@ -1,4 +1,14 @@
 {% extends 'base.html' %}
 {% block content %}
 <h1>Hello World!</h1>
+
+{% if api_data %}
+    {{ api_data }}
+{% else %}
+    There is connection error in the stock's quotations. 
+    Please ensure was your ticker or try again later, or e-mail me at contact@mydividends.us
+{% endif %}
+
+
+
 {% endblock %}
